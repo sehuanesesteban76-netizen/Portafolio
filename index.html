@@ -1,66 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Carlos Sehuanes | Perfil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        titulos: ['"Space Grotesk"', 'sans-serif'],
+                        texto: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <header>
-        <h1>Carlos Esteban Sehuanes Leon</h1>
-        <img src="imagenes/Mi.jpeg" alt="Imagen de Mi" height="60rem" width="60rem">
 
-        <p>Soy <strong>coder</strong> de desarrollo de software en formación</p>
-    </header>
-    
-    <main>
-        <section>
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Deportista de alto rendimiento</li>
-            <li>Manejo basico de HTML y CSS</li>
-            <li>Conocimiento en ingles</li>
-            <li>Control de versiones de Git y Git hub</li>
-        </ul>
+<body class="m-6">
+    <header
+        class="mb-6 font-texto text-base text-white p-5 bg-slate-800 rounded-xl h-48 flex items-center justify-center">
+        <section class="flex space-x-10 justify-center items-center">
+            <img src="imagenes/Mi.jpeg" alt="Imagen de Mi" class="rounded-full size-40">
+            <div class="flex flex-col justify-center">
+                <h1 class="font-titulos text-4xl font-bold">Carlos Esteban Sehuanes Leon</h1>
+                <p>Soy <strong>coder</strong> de desarrollo de software en formación</p>
+            </div>
         </section>
-        <section>
-            <h2>Mi ruta de aprendizaje</h2>
-            <ol>
+    </header>
+
+    <main class="font-texto text-base flex items-center p-6 gap-6 mx-auto w-full bg-slate-50">
+        <section class="m-4  w-fit p-6 border-2 border-dashed border-gray-700 flex flex-col justify-center rounded-xl shadow-xl shadow-gray-600">
+            <h2 class="font-title text-2xl font-bold text-center">Habilidades</h2>
+            <ul class="list-disc list-inside p-4">
+                <li>Deportista de alto rendimiento</li>
+                <li>Manejo basico de HTML y CSS</li>
+                <li>Conocimiento en ingles</li>
+                <li>Control de versiones de Git y Git hub</li>
+            </ul>
+        </section>
+        <section class="m-4 w-fit p-6 border-2 border-dotted border-gray-800 flex flex-col justify-center rounded-lg shadow-xl shadow-gray-600">
+            <h2 class="font-title text-2xl font-bold text-center">Mi ruta de aprendizaje</h2>
+            <ol class="list-decimal list-inside  p-4">
                 <li>HTML y CSS</li>
                 <li>JavaScript</li>
                 <li>Backend y base de datos</li>
             </ol>
         </section>
-        <section>
-            <h2>Mi horario de estudio</h2>
-            <table border="1">
-                <thead>
+        <section class="m-4 p-4 w-fit border-2 border-dashed border-gray-700 flex flex-col justify-center rounded-xl shadow-xl shadow-gray-600">
+            <h2 class="font-title text-2xl font-bold text-center">Mi horario de estudio</h2>
+            <table class="table-fixed border-collapse border border-slate-500 border-spacing-2 p-4 m-3">
+                <thead class="bg-gray-900 text-gray-200">
                     <tr>
-                        <th>Día</th>
-                        <th>Tema</th>
-                        <th>Horas</th>
+                        <th class="border border-slate-600 p-5">Día</th>
+                        <th class="border border-slate-600 p-5">Tema</th>
+                        <th class="border border-slate-600 p-5">Horas</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Lunes</td>
-                        <td>HTML</td>
-                        <td>2</td>
+                        <td class="border border-slate-700 p-5">Lunes</td>
+                        <td class="border border-slate-700 p-5">HTML</td>
+                        <td class="border border-slate-700 p-5">2</td>
                     </tr>
                     <tr>
-                        <td>Miercoles</td>
-                        <td>CSS</td>
-                        <td>3</td>
+                        <td class="border border-slate-700 p-5">Miercoles</td>
+                        <td class="border border-slate-700 p-5">CSS</td>
+                        <td class="border border-slate-700 p-5">3</td>
                     </tr>
                 </tbody>
             </table>
         </section>
-        <section>
-            <h2>Mi contacto</h2>
-            <p><a href="https://github.com/sehuanesesteban76-netizen">Mi GitHub</a> .
-            <a href="mailto:sehuanesesteban76@gmail.com">Escribeme</a></p>
+        <section class="m-4 p-4 w-fit border-2 border-dotted border-gray-700 flex flex-col justify-center rounded-xl shadow-xl shadow-gray-600">
+            <h2 class="font-title text-2xl font-bold text-center">Mi contacto</h2>
+            <p class="font-texto text-center"><a href="https://github.com/sehuanesesteban76-netizen">Mi GitHub</a> .
+                <a href="mailto:sehuanesesteban76@gmail.com">Escribeme</a>
+            </p>
         </section>
 
     </main>
+    <footer class="flex justify-center m-6 bg-slate-900 h-fit rounded-xl ">
+        <nav class="flex gap-6 p-6">
+
+            <a href="https://github.com/sehuanesesteban76-netizen" aria-label="GitHub">
+                <i class="fa-brands fa-github text-2xl text-white"></i>
+            </a>
+
+            <a href="mailto:TU_CORREO" aria-label="Enviar correo">
+                <i class="fa-solid fa-envelope text-2xl text-white"></i>
+            </a>
+        </nav>
+
+    </footer>
 </body>
+
 </html>
