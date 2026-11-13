@@ -32,7 +32,7 @@
         <section id="presentacion" class="py-5">
             <div class="row align-items-center g-4">
                 <div class="col-12 col-md-3 order-md-2">
-                    <img src="imagenes/Mi.jpeg" alt="Retrato de Carlos Esteban Sehuanes León" width="160" height="160"
+                    <img src="imagenes/Mi.jpeg" alt="Retrato de Carlos Esteban Sehuanes León" width="200" height="200"
                         class="rounded-circle object-fit-cover">
                 </div>
                 <div class="col-12 col-md-9 order-md-1">
@@ -46,92 +46,112 @@
             </div>
         </section>
 
-        <section id="sobre-mi">
-            <h2>Sobre mí</h2>
-            <p>Contenido por definir: mi historia, mis intereses y mis objetivos como desarrollador.</p>
+        <section id="sobre-mi" class="card rounded-4 shadow-sm p-4 mb-4 bg-light">
+            <h2 class="fs-4 mb-3">Sobre mí</h2>
+            <p class="mb-0 text-body-secondary">Contenido por definir: mi historia, mis intereses y mis objetivos como desarrollador.</p>
         </section>
 
-        <section id="habilidades">
-            <h2>Mis habilidades</h2>
-            <ul>
-                <li>Deportista de alto rendimiento</li>
-                <li>Manejo basico de HTML y CSS</li>
-                <li>Conocimiento en ingles</li>
-                <li>Control de versiones de Git y Git hub</li>
-            </ul>
+        <section id="habilidades" class="card rounded-4 shadow-sm p-4 mb-4 bg-primary-subtle">
+            <h2 class="fs-4 mb-4">Mis habilidades</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <h3 class="fs-6 fw-bold mb-3">Tecnologías</h3>
+                    <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
+                        <li class="badge bg-light text-primary fw-normal text-wrap text-start p-2">Manejo basico de HTML y CSS</li>
+                        <li class="badge bg-light text-primary fw-normal text-wrap text-start p-2">Control de versiones de Git y Git hub</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3 class="fs-6 fw-bold mb-3">Habilidades personales</h3>
+                    <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
+                        <li class="badge bg-light text-primary fw-normal text-wrap text-start p-2">Deportista de alto rendimiento</li>
+                        <li class="badge bg-light text-primary fw-normal text-wrap text-start p-2">Conocimiento en ingles</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section id="proyectos">
-            <h2>Mis proyectos</h2>
-            <article>
-                <h3>Rueda Libre</h3>
-                <a href="https://github.com/sehuanesesteban76-netizen/rueda-libre.git">Visita mi proyecto</a>
+        <section id="proyectos" class="card rounded-4 shadow-sm p-4 mb-4 bg-light">
+            <h2 class="fs-4 mb-4">Mis proyectos</h2>
+            <article class="row align-items-center g-3">
+                <div class="col-12 col-md-3">
+                    <div class="bg-primary-subtle text-primary text-center rounded-3 py-4" aria-hidden="true">
+                        <span class="display-6 fw-bold">RL</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9">
+                    <h3 class="fs-5 mb-3">Rueda Libre</h3>
+                    <a href="https://github.com/sehuanesesteban76-netizen/rueda-libre.git" class="btn btn-primary">Visita mi proyecto</a>
+                </div>
             </article>
         </section>
 
-        <section id="formacion">
-            <h2>Formación y aprendizaje</h2>
-            <h3>Mi formación actual</h3>
-            <ul>
-                <li>Riwi - Desarrollo de software, Habilidades socioemocionales, Ingles.</li>
-                <li>Quick Learning - Ingles</li>
-            </ul>
-
-            <h3>Mi ruta de aprendizaje</h3>
-            <ol>
-                <li>HTML y CSS</li>
-                <li>JavaScript</li>
-                <li>Backend y base de datos</li>
-            </ol>
-            <table>
-                <caption>Mi horario de estudio</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Día</th>
-                        <th scope="col">Tema</th>
-                        <th scope="col">Horas</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Lunes</td>
-                        <td>HTML</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Miercoles</td>
-                        <td>CSS</td>
-                        <td>3</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section id="formacion" class="card rounded-4 shadow-sm p-4 mb-4 bg-body-tertiary">
+            <h2 class="fs-4 mb-4">Formación y aprendizaje</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <h3 class="fs-6 fw-bold mb-3">Mi formación actual</h3>
+                    <ul class="mb-0 text-body-secondary">
+                        <li class="mb-2">Riwi - Desarrollo de software, Habilidades socioemocionales, Ingles.</li>
+                        <li class="mb-2">Quick Learning - Ingles</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3 class="fs-6 fw-bold mb-3">Mi ruta de aprendizaje</h3>
+                    <ol class="mb-0 text-body-secondary">
+                        <li class="mb-2">HTML y CSS</li>
+                        <li class="mb-2">JavaScript</li>
+                        <li class="mb-2">Backend y base de datos</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="table-responsive mt-4">
+                <table class="table table-hover align-middle caption-top mb-0">
+                    <caption class="fw-bold text-body">Mi horario de estudio</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Día</th>
+                            <th scope="col">Tema</th>
+                            <th scope="col">Horas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>HTML</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Miercoles</td>
+                            <td>CSS</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
-        <section id="experiencia">
-            <h2>Experiencia</h2>
-            <p>Bachiller - En proceso a desarrolador de software - Conocimientos en construcción.</p>
+        <section id="experiencia" class="card rounded-4 shadow-sm p-4 mb-4 bg-light">
+            <h2 class="fs-4 mb-3">Experiencia</h2>
+            <p class="mb-0 text-body-secondary">Bachiller - En proceso a desarrolador de software - Conocimientos en construcción.</p>
         </section>
 
-        <section id="contacto">
-            <h2>Hablemos</h2>
-            <p><a href="https://github.com/sehuanesesteban76-netizen">Mi GitHub</a> ·
-                <a href="mailto:sehuanesesteban76@gmail.com">Escribeme</a>
-            </p>
+        <section id="contacto" class="card rounded-4 shadow-sm p-4 mb-4 bg-primary-subtle">
+            <h2 class="fs-4 mb-4">Hablemos</h2>
+            <div class="d-flex flex-wrap gap-3">
+                <a href="https://github.com/sehuanesesteban76-netizen" class="btn btn-primary">Mi GitHub</a>
+                <a href="mailto:sehuanesesteban76@gmail.com" class="btn btn-secondary">Escribeme</a>
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>Carlos Sehuanes · 2026</p>
-        <nav aria-label="Enlaces del pie de página">
-
-            <a href="https://github.com/sehuanesesteban76-netizen" aria-label="GitHub">
-                GitHub
-            </a>
-
-            <a href="mailto:sehuanesesteban76@gmail.com" aria-label="Enviar correo">
-                Enviar correo
-            </a>
-        </nav>
-
+    <footer class="bg-primary text-light">
+        <div class="container py-4 d-flex flex-wrap align-items-center justify-content-between gap-3">
+            <p class="mb-0">Carlos Sehuanes · 2026</p>
+            <nav aria-label="Enlaces del pie de página" class="d-flex flex-wrap gap-3">
+                <a href="https://github.com/sehuanesesteban76-netizen" aria-label="GitHub" class="link-light">GitHub</a>
+                <a href="mailto:sehuanesesteban76@gmail.com" aria-label="Enviar correo" class="link-light">Enviar correo</a>
+            </nav>
+        </div>
     </footer>
 </body>
 

@@ -1,16 +1,24 @@
 :root {
-    --bs-body-bg: #faf5e9;
+    --bs-body-bg: #fbf7ed;
+    --bs-body-bg-rgb: 251, 247, 237;
     --bs-body-color: #2f513b;
     --bs-body-color-rgb: 47, 81, 59;
     --bs-primary: #2f513b;
     --bs-primary-rgb: 47, 81, 59;
-    --bs-light: #faf5e9;
-    --bs-light-rgb: 250, 245, 233;
+    --bs-primary-bg-subtle: #e9efdf;
+    --bs-primary-text-emphasis: #24412e;
+    --bs-light: #fffdf7;
+    --bs-light-rgb: 255, 253, 247;
     --bs-link-color: #a5492e;
     --bs-link-color-rgb: 165, 73, 46;
     --bs-link-hover-color: #843923;
     --bs-link-hover-color-rgb: 132, 57, 35;
-    --bs-border-color: #ded4be;
+    --bs-border-color: #e1ddcc;
+    --bs-border-color-translucent: #e1ddcc;
+    --bs-tertiary-bg: #f6f0e4;
+    --bs-tertiary-bg-rgb: 246, 240, 228;
+    --bs-secondary-color: #5f6b59;
+    --bs-secondary-color-rgb: 95, 107, 89;
 }
 
 .btn-primary {
@@ -37,4 +45,9 @@
     --bs-btn-active-color: #843923;
     --bs-btn-active-bg: #e8dac4;
     --bs-btn-active-border-color: #e8dac4;
+}
+
+.table {
+    --bs-table-color: var(--bs-body-color);
+    --bs-table-bg: transparent;
 }
