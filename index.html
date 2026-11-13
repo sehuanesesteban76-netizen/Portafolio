@@ -5,34 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Sehuanes | Perfil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-    <header>
-        <p>Carlos Sehuanes</p>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="#presentacion">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#formacion">Formación</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="bg-primary text-light">
+        <div class="container py-4 d-lg-flex align-items-lg-center justify-content-lg-between gap-4">
+            <p class="mb-0 fw-bold">Carlos Sehuanes</p>
+            <nav aria-label="Navegación principal" class="mt-3 mt-lg-0">
+                <ul class="nav small">
+                    <li class="nav-item"><a href="#presentacion" class="nav-link link-light px-2">Inicio</a></li>
+                    <li class="nav-item"><a href="#sobre-mi" class="nav-link link-light px-2">Sobre mí</a></li>
+                    <li class="nav-item"><a href="#habilidades" class="nav-link link-light px-2">Habilidades</a></li>
+                    <li class="nav-item"><a href="#proyectos" class="nav-link link-light px-2">Proyectos</a></li>
+                    <li class="nav-item"><a href="#formacion" class="nav-link link-light px-2">Formación</a></li>
+                    <li class="nav-item"><a href="#experiencia" class="nav-link link-light px-2">Experiencia</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link link-light px-2">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="presentacion">
-            <img src="imagenes/Mi.jpeg" alt="Retrato de Carlos Esteban Sehuanes León" width="160">
-            <h1>Carlos Esteban Sehuanes Leon</h1>
-            <p>Soy <strong>coder</strong> de desarrollo de software en formación</p>
-            <nav aria-label="Acciones de presentación">
-                <a href="#proyectos">Ver proyectos</a>
-                ·
-                <a href="#contacto">Contactarme</a>
-            </nav>
+    <main class="container">
+        <section id="presentacion" class="py-5">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-3 order-md-2">
+                    <img src="imagenes/Mi.jpeg" alt="Retrato de Carlos Esteban Sehuanes León" width="160" height="160"
+                        class="rounded-circle object-fit-cover">
+                </div>
+                <div class="col-12 col-md-9 order-md-1">
+                    <h1 class="display-6 fw-bold">Carlos Esteban Sehuanes Leon</h1>
+                    <p class="mt-3">Soy <strong>coder</strong> de desarrollo de software en formación</p>
+                    <nav aria-label="Acciones de presentación" class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                        <a href="#contacto" class="btn btn-secondary">Contactarme</a>
+                    </nav>
+                </div>
+            </div>
         </section>
 
         <section id="sobre-mi">
